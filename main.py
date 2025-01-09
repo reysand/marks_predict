@@ -1,3 +1,4 @@
+import os
 import sys
 from operator import add
 from random import random
@@ -8,6 +9,7 @@ if __name__ == "__main__":
     """
     Usage: pi [partitions]
     """
+    os.environ['PYSPARK_PYTHON'] = "./env/bin/python"
     spark = SparkSession.builder.appName("PythonPi").getOrCreate()
 
     partitions = int(sys.argv[1]) if len(sys.argv) > 1 else 2
