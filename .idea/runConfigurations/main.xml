@@ -1,0 +1,130 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="main" type="PySparkSubmitConfigurationType" factoryName="ClusterSparkJobConfigurationType" show_console_on_std_err="false" show_console_on_std_out="false">
+    <option name="allowRunningInParallel" value="false" />
+    <option name="archives">
+      <list>
+        <FilePath>
+          <option name="path" value="$PROJECT_DIR$/env.tar.gz#env" />
+          <option name="type" value="upload" />
+        </FilePath>
+      </list>
+    </option>
+    <option name="artifactArgs" value="10000" />
+    <option name="artifactPath">
+      <FilePath>
+        <option name="path" value="/opt/spark_projects/marks_predict/main.py" />
+        <option name="type" value="server" />
+      </FilePath>
+    </option>
+    <option name="beforeShellScript" value="rm -rf marks_predict &amp;&amp; git clone https://github.com/reysand/marks_predict.git &amp;&amp; cd marks_predict" />
+    <option name="className" value="" />
+    <option name="clusterManager" value="STANDALONE" />
+    <option name="clusterManagerDeployModeDefault" value="false" />
+    <option name="conf" value="" />
+    <option name="debugDriverEnable" value="true" />
+    <option name="debugDriverPort" />
+    <option name="debugDriverSuspend" />
+    <option name="deployMode" value="CLIENT" />
+    <option name="driverClassPath">
+      <list>
+        <FilePath>
+          <option name="path" value="/opt/spark_plugins/postgresql-42.7.5.jar" />
+          <option name="type" value="server" />
+        </FilePath>
+      </list>
+    </option>
+    <option name="driverCores" value="" />
+    <option name="driverJavaOptions" value="" />
+    <option name="driverLibraryPath">
+      <list />
+    </option>
+    <option name="driverMemory" value="" />
+    <option name="envParams" value="" />
+    <option name="excludePackages" value="" />
+    <option name="executorCores" value="" />
+    <option name="executorMemory" value="" />
+    <option name="files">
+      <list />
+    </option>
+    <option name="interactive" value="false" />
+    <option name="jars">
+      <list>
+        <FilePath>
+          <option name="path" value="/opt/spark_plugins/postgresql-42.7.5.jar" />
+          <option name="type" value="server" />
+        </FilePath>
+        <FilePath>
+          <option name="path" value="/opt/spark_plugins/rapids-4-spark_2.13-25.02.0.jar" />
+          <option name="type" value="server" />
+        </FilePath>
+      </list>
+    </option>
+    <option name="keytab">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="" />
+      </FilePath>
+    </option>
+    <option name="master" value="spark://192.168.121.170:7077" />
+    <option name="numExecutors" value="" />
+    <option name="packages" value="" />
+    <option name="principal" value="" />
+    <option name="projectPathOnTarget" />
+    <option name="propertiesFile">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="" />
+      </FilePath>
+    </option>
+    <option name="proxyUser" value="" />
+    <option name="pyFiles">
+      <list />
+    </option>
+    <option name="queue" value="" />
+    <option name="remoteTargetId">
+      <RemoteTargetId>
+        <option name="clusterId" />
+        <option name="connectionId" value="Custom Spark Cluster@ArbitraryClusterConnectionGroup@5304428512850882212" />
+        <option name="name" value="Custom Spark Cluster" />
+      </RemoteTargetId>
+    </option>
+    <option name="repositories" value="" />
+    <option name="selectedOptions">
+      <list />
+    </option>
+    <option name="shellExecutor" value="/bin/bash" />
+    <option name="sparkHome" value="/opt/spark" />
+    <option name="sparkMonitoringDriverId" value="" />
+    <option name="supervise" value="false" />
+    <option name="targetDirectory">
+      <FilePath>
+        <option name="path" value="/home/cluser" />
+        <option name="type" value="server" />
+      </FilePath>
+    </option>
+    <option name="template" value="false" />
+    <option name="totalExecutorCores" value="" />
+    <option name="verbose" value="false" />
+    <option name="visibleBlocks">
+      <map>
+        <entry key="SPARK_CONFIG" value="true" />
+        <entry key="DEPENDENCIES" value="true" />
+        <entry key="MAVEN_DEPENDENCIES" value="false" />
+        <entry key="DRIVER" value="true" />
+        <entry key="EXECUTOR" value="true" />
+        <entry key="KERBEROS" value="false" />
+        <entry key="ADDITIONAL" value="true" />
+        <entry key="SHELL_OPTIONS" value="true" />
+      </map>
+    </option>
+    <option name="workDirectoryPath">
+      <FilePath>
+        <option name="path" value="/opt/spark_projects" />
+        <option name="type" value="server" />
+      </FilePath>
+    </option>
+    <method v="2">
+      <option name="SftpSparkFileUpload" enabled="false" />
+    </method>
+  </configuration>
+</component>
